@@ -1,1 +1,1 @@
-https://github.com/Creator252/rsschool-cv/
+https://creator252.github.io/rsschool-cv/
