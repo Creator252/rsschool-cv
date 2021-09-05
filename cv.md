@@ -1,7 +1,6 @@
-# Not the final option
 
-- My name is Nikita Evseev.
-- You can contact me:
+## My name is Nikita Evseev.
+## My contacts:
   - Telegram: +375 44 512-27-97
   - Viber: +375 44 512-27-97
   - [VK](https://vk.com/nikita.evseev)
@@ -9,7 +8,7 @@
   - Discord: merelу#2218
   - WhatsApp: +37544 512-27-97
   - [Skype](https://join.skype.com/invite/BUWEoMzLsfv6)
-- A little about me:
+## A little about me:
   - My main goal now is const self-improve in web-programming.
   - Every day I strive to learn something new.
   - My three positive qualities in my opinion:
@@ -17,6 +16,16 @@
     2. sense of purpose
     3. industriousness
 - I work with HTML, CSS, JS. Studied algorithms on C, C++, Python.
-- Here will be links to tutorials in the future.
-- Third year FITU BSUIR.
+- Code snippet on JS.
+  ```
+  var OrderPeople = function(people){
+    return people.sort( (a,b) => a.age - b.age );
+  }
+  ```
+## Courses:
+  - CS50 video course
+  - JS, CSS, HTML, Git video courses on YouTube channel Glo Academy
+  - JavaScript https://learn.javascript.ru/
+## Study:
+-Third year FITU BSUIR.
 - English A2.
