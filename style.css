@@ -80,8 +80,8 @@ h1{
 .nav-list > li{
     color: #333333;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 30px;
     letter-spacing: 0.03em;
     width: 34%;
 }
@@ -96,13 +96,15 @@ a{
 }
 
 .icon{
-    width: 40px;
+    width: 30px;
     vertical-align: sub;
     padding-right: 13px;
 }
 
 .wrapper-columns{
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     
 }
 
@@ -116,8 +118,14 @@ a{
 /* !burger menu */
 
 .burger-menu{
-    padding-left: 62px;
+    padding-left: 80px;
     padding-bottom: 30px;
+    width: 32px;
+    position: absolute;
+}
+
+.burger-menu-active{
+    width: 25%;
 }
 
 .burger-menu-active .burger-menu-lines{
@@ -141,10 +149,11 @@ a{
 .burger-menu-lines::before,
 .burger-menu-lines::after{
     display: block;
-    height: 3px;
+    height: 5px;
     width: 32px;
     background-color: #157698;
     position: relative;
+    margin-top: 30px;
 }
 
 .burger-menu-lines::after{
@@ -163,25 +172,35 @@ a{
 .burger-menu-nav{
     position: relative;
     z-index: 20;
-    left: -100%;
+    display: none;
 }
 
 .burger-menu-active .burger-menu-nav{
-    left: 0%;
+    display: block;
+    position: absolute;
 }
 
 .burger-menu-nav-list{
     list-style: none;
-    padding-top: 45px;
+    padding-top: 20px;
 }
 
-.cnt{
-    margin-left: 62px;
+.burger-menu-nav-list-item{
+    padding-top: 12px;
+}
+
+.burger-menu-nav-list-item a{
+    font-size: 20px;
+    color: #4F4F4F;
+    font-family: 'Roboto', sans-serif;
+}
+
+.burger-menu-nav-list-item a:hover{
+    color: #157698;
 }
 
 .more-contacts-nav{
     margin-top: 25px;
-    padding-left: 62px;  
 }
 
 .section-header{
@@ -199,12 +218,12 @@ a{
     display: block;
     background-color: #157698;
     height: 3px;
-    width: 51%;
+    width: 350px;
     margin-bottom: -15px;
 }
 
 .more-icon{
-    width: 20px;
+    width: 25px;
     vertical-align: sub;
     padding-right: 10px;
 }
@@ -212,13 +231,14 @@ a{
 .more-contacts-list{
     list-style: none;
     font-size: 20px;
-    line-height: 41px;
-    letter-spacing: 0.05em;
+    line-height: 30px;
     color: #4F4F4F;
+    font-family: 'Roboto', sans-serif;
 }
 
 .about-me{
     width: 100%;
+    max-width: 800px;
     font-family: 'Poppins', sans-serif;
     margin-top: 25px;
 }
@@ -237,7 +257,8 @@ a{
 }
 
 .courses{
-    padding-left: 658px;
+    width: 100%;
+    max-width: 800px;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
 }
