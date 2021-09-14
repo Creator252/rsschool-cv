@@ -360,21 +360,13 @@ a{
     }
   }
 
-  @media (max-width: 1300px) {
-    .courses {
-        padding-left: 614px;
+  @media(max-width: 1300px){
+    .about-me{
+        max-width: 600px;
     }
-  }
 
-  @media (max-width: 1200px) {
-    .courses {
-        padding-left: 600px;
-    }
-  }
-
-  @media (max-width: 1150px) {
-    .courses {
-        padding-left: 576px;
+    .courses{
+        max-width: 600px;  
     }
   }
 
@@ -389,18 +381,16 @@ a{
     .icon{
         display: none;
     }
-
-    .courses {
-        padding-left: 50px;
+    .about-me{
+        max-width: 550px;
     }
 
-    .more-contacts {
-        display: none;
+    .courses{
+        max-width: 550px;  
     }
 
-    .wrapper-columns {
-        display: block; 
-        padding-left: 50px;
+    .section-header::after{
+        width: 250px;
     }
   }
 
@@ -420,6 +410,16 @@ a{
 
     .icon-box {
         height: 326px;
+    }
+  }
+
+  @media(max-width: 900px){
+    .burger-menu{
+        display: none;
+    }
+
+    .wrapper-columns {
+        align-items: center;
     }
   }
 
@@ -478,15 +478,7 @@ a{
   @media(max-width: 515px){
     .icon-box {
         height: 305px;
-    }
-
-    .wrapper-columns {
-        padding-left: 30px;
-    }
-    
-    .courses {
-        padding-left: 30px;
-    }
+    }  
   }
 
   @media(max-width: 460px){
@@ -535,14 +527,6 @@ a{
   @media(max-width: 370px){
     .icon-box > img {
         max-width: 159px;
-    }
-
-    .wrapper-columns {
-        padding-left: 15px;
-    }
-
-    .courses{
-        padding-left: 15px;
     }
     .nav-list {
         padding-left: 5%;
