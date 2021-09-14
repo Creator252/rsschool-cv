@@ -214,3 +214,254 @@ a{
 .git:hover{
     color:#157698;
 }
+
+@media (max-width: 1500px) {
+    .nav-list {
+        padding-top: 15px;
+    }
+
+    .header-info > h2 {
+        padding-top: 51px;
+        padding-right: 144px;
+    }
+
+    .name {
+        font-size: 60px;
+        line-height: 87px;
+        letter-spacing: 0.004em;
+    }
+
+    .sirname {
+        font-size: 60px;
+        line-height: 87px;
+        letter-spacing: 0.004em;
+    }
+
+    .nav-list > li {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        width: 34%;
+    }
+
+    .icon {
+        width: 30px;
+        vertical-align: sub;
+        padding-right: 10px;
+    }
+
+    .section-header {
+        font-size: 23px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+    }
+
+    .more-contacts-list {
+        font-size: 16px;
+        line-height: 35px;
+        letter-spacing: 0;
+    }
+
+    .about-me-list {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .code {
+        font-size: 14px;
+    }
+
+    .study-list {
+        font-size: 16px;
+        line-height: 25px;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .courses {
+        padding-left: 614px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .courses {
+        padding-left: 600px;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .courses {
+        padding-left: 576px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .nav-list > li{
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        width: 19%;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .courses {
+        padding-left: 50px;
+    }
+
+    .more-contacts {
+        display: none;
+    }
+
+    .wrapper-columns {
+        display: block; 
+        padding-left: 50px;
+    }
+  }
+
+  @media(max-width: 950px){
+    .nav-list {
+        display: block;
+        padding-top: 0px;
+        padding-left: 30%;
+    }
+
+    .nav-list > li {
+        font-size: 16px;
+        line-height: 20px;
+        width: 0%;
+        padding-bottom: 7px;
+    }
+
+    .icon-box {
+        height: 326px;
+    }
+  }
+
+  @media(max-width: 871px){
+    .header-info > h2 {
+        padding-top: 26px;
+        padding-right: 0;
+    }
+  }
+
+  @media(max-width: 710px){
+    .icon-box {
+        height: 280px;
+        max-width: 290px;
+    }
+
+    .icon-box > img {
+        max-width: 185px;
+    }
+
+    .header-info > h2 {
+        padding-bottom: 15px;
+    }
+
+    .name {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .sirname{
+        font-size: 40px;
+        line-height: 50px;
+    }
+  }
+
+  @media(max-width: 550px){
+    .header-info {
+        border-bottom: 28px solid #157698;
+    }
+
+    .header-info > h2 {
+        padding-top: 12px;
+    }
+
+    .icon-box {
+        height: 269px;
+        max-width: 248px;
+    }
+
+    .icon-box > img {
+        border: 28px solid #157698;
+        border-right: none;
+    }
+  }
+
+  @media(max-width: 515px){
+    .icon-box {
+        height: 305px;
+    }
+
+    .wrapper-columns {
+        padding-left: 30px;
+    }
+    
+    .courses {
+        padding-left: 30px;
+    }
+  }
+
+  @media(max-width: 460px){
+    .icon-box > img {
+        border: 28px solid #157698;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-radius: 0;
+    }
+
+    .nav-list {
+        padding-left: 15%;
+    }
+
+    .name {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .sirname{
+        font-size: 30px;
+        line-height: 40px; 
+    }
+
+    .section-header {
+        font-size: 18px;
+    }
+
+    .about-me-list {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .study-list {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .code{
+        display: none; 
+        /* code crashed structure */
+    }
+  }
+
+  @media(max-width: 370px){
+    .icon-box > img {
+        max-width: 159px;
+    }
+
+    .wrapper-columns {
+        padding-left: 15px;
+    }
+
+    .courses{
+        padding-left: 15px;
+    }
+    .nav-list {
+        padding-left: 5%;
+    }
+  }
