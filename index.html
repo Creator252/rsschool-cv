@@ -40,6 +40,18 @@
         <div class="container">
             <div class="wrapper-columns">
                 <section class="more-contacts">
+                    <div class="burger-menu">
+                        <a href="#" class="burger-menu-button">
+                            <span class="burger-menu-lines">
+                            </span>
+                        </a>
+                        <nav class="burger-menu-nav">
+                            <ul class="burger-menu-nav-list">
+                                <li class="burger-menu-nav-list-item"><a href="#about-me">About me</a></li>
+                                <li class="burger-menu-nav-list-item"><a href="#courses">Courses</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                     <h2 class="section-header cnt">More contacts</h2>
                     <nav class="more-contacts-nav">
                         <ul class="more-contacts-list">
@@ -50,7 +62,7 @@
                         </ul>
                     </nav>
                 </section>
-                <section class="about-me">
+                <section class="about-me" id="about-me">
                     <h2 class="section-header">About me: </h2>
                     <ul class="about-me-list">
                         <li>My main goal now is const self-improve in web-programming.</li>
@@ -66,7 +78,7 @@ var OrderPeople = function(people){
                     </pre>
                 </section>
             </div>
-            <section class="courses">
+            <section class="courses" id="courses">
                 <h2 class="section-header">Courses and study: </h2>
                 <ul class="study-list">
                     <li>CS50 video course</li>
@@ -91,5 +103,6 @@ var OrderPeople = function(people){
         </div>
     </footer>
 </body>
+<script src="./script.js"></script>
 
 </html>
