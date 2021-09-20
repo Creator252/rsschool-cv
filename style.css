@@ -395,11 +395,26 @@ a{
     }
 
     .section-header::after{
-        width: 250px;
+        width: 200px;
+    }
+
+    .more-contacts-list {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    .burger-menu-nav-list-item a {
+        font-size: 16px;
     }
   }
 
+ 
+
   @media(max-width: 950px){
+    .more-contacts-list li i{
+        display: none;
+    }
+
     .nav-list {
         display: block;
         padding-top: 0px;
@@ -415,6 +430,20 @@ a{
 
     .icon-box {
         height: 326px;
+    }
+
+    .section-header::after{
+        width: 150px;
+    }
+
+    .more-contacts-list {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .section-header {
+        font-size: 20px;
+        line-height: 24px;
     }
   }
 
@@ -453,6 +482,13 @@ a{
     .sirname{
         font-size: 40px;
         line-height: 50px;
+    }
+
+    .section-header::after{
+        width: 100px;
+    }
+    .burger-menu-nav-list {
+        padding-top: 0px;
     }
   }
 
