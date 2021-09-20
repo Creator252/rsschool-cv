@@ -80,8 +80,8 @@ h1{
 .nav-list > li{
     color: #333333;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 30px;
     letter-spacing: 0.03em;
     width: 34%;
 }
@@ -96,13 +96,15 @@ a{
 }
 
 .icon{
-    width: 40px;
+    width: 30px;
     vertical-align: sub;
     padding-right: 13px;
 }
 
 .wrapper-columns{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -113,13 +115,97 @@ a{
     margin-top: 25px;
 }
 
-.cnt{
-    margin-left: 62px;
+/* !burger menu */
+
+.burger-menu{
+    padding-left: 80px;
+    padding-bottom: 30px;
+    width: 32px;
+    position: absolute;
+}
+
+.burger-menu-active{
+    width: 25%;
+}
+
+.burger-menu-active .burger-menu-lines{
+    background-color: transparent;
+}
+
+.burger-menu-active .burger-menu-lines::after{
+    transform: rotate(-45deg);
+}
+
+.burger-menu-active .burger-menu-lines::before{
+    transform: rotate(45deg);
+}
+
+.burger-menu-button{
+    position: relative;
+    z-index: 10;
+}
+
+.burger-menu-lines,
+.burger-menu-lines::before,
+.burger-menu-lines::after{
+    display: block;
+    height: 5px;
+    width: 32px;
+    background-color: #157698;
+    position: relative;
+    margin-top: 30px;
+}
+
+.burger-menu-lines::after{
+    content:'';
+    position: absolute;
+    margin-top: 10px;
+    display: block;
+    z-index: 40;
+}
+
+.burger-menu-lines::before{
+    content:'';
+    position: absolute;
+    margin-top: -10px;
+}
+
+.burger-menu-nav{
+    position: relative;
+    z-index: 20;
+    display: none;
+    background-color: #4C4E50;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 58px;
+}
+
+.burger-menu-active .burger-menu-nav{
+    display: block;
+    position: absolute;
+}
+
+.burger-menu-nav-list{
+    list-style: none;
+    padding-top: 20px;
+}
+
+.burger-menu-nav-list-item{
+    padding-top: 12px;
+}
+
+.burger-menu-nav-list-item a{
+    font-size: 20px;
+    color: #f9f8fd;
+    font-family: 'Roboto', sans-serif;
+}
+
+.burger-menu-nav-list-item a:hover{
+    color: #157698;
 }
 
 .more-contacts-nav{
     margin-top: 25px;
-    padding-left: 62px;  
 }
 
 .section-header{
@@ -137,12 +223,12 @@ a{
     display: block;
     background-color: #157698;
     height: 3px;
-    width: 51%;
+    width: 250px;
     margin-bottom: -15px;
 }
 
 .more-icon{
-    width: 20px;
+    width: 25px;
     vertical-align: sub;
     padding-right: 10px;
 }
@@ -150,13 +236,14 @@ a{
 .more-contacts-list{
     list-style: none;
     font-size: 20px;
-    line-height: 41px;
-    letter-spacing: 0.05em;
-    color: #4F4F4F;
+    line-height: 30px;
+    color: #f9f8fd;
+    font-family: 'Roboto', sans-serif;
 }
 
 .about-me{
     width: 100%;
+    max-width: 800px;
     font-family: 'Poppins', sans-serif;
     margin-top: 25px;
 }
@@ -175,7 +262,8 @@ a{
 }
 
 .courses{
-    padding-left: 658px;
+    width: 100%;
+    max-width: 800px;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
 }
@@ -214,3 +302,270 @@ a{
 .git:hover{
     color:#157698;
 }
+
+@media (max-width: 1500px) {
+    .nav-list {
+        padding-top: 15px;
+    }
+
+    .header-info > h2 {
+        padding-top: 51px;
+        padding-right: 144px;
+    }
+
+    .name {
+        font-size: 60px;
+        line-height: 87px;
+        letter-spacing: 0.004em;
+    }
+
+    .sirname {
+        font-size: 60px;
+        line-height: 87px;
+        letter-spacing: 0.004em;
+    }
+
+    .nav-list > li {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        width: 34%;
+    }
+
+    .icon {
+        width: 30px;
+        vertical-align: sub;
+        padding-right: 10px;
+    }
+
+    .section-header {
+        font-size: 23px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+    }
+
+    .more-contacts-list {
+        font-size: 16px;
+        line-height: 35px;
+        letter-spacing: 0;
+    }
+
+    .about-me-list {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .code {
+        font-size: 14px;
+    }
+
+    .study-list {
+        font-size: 16px;
+        line-height: 25px;
+    }
+  }
+
+  @media(max-width: 1300px){
+    .about-me{
+        max-width: 600px;
+    }
+
+    .courses{
+        max-width: 600px;  
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .nav-list > li{
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        width: 19%;
+    }
+
+    .icon{
+        display: none;
+    }
+    .about-me{
+        max-width: 550px;
+    }
+
+    .courses{
+        max-width: 550px;  
+    }
+
+    .section-header::after{
+        width: 200px;
+    }
+
+    .more-contacts-list {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    .burger-menu-nav-list-item a {
+        font-size: 16px;
+    }
+  }
+
+ 
+
+  @media(max-width: 950px){
+    .more-contacts-list li i{
+        display: none;
+    }
+
+    .nav-list {
+        display: block;
+        padding-top: 0px;
+        padding-left: 30%;
+    }
+
+    .nav-list > li {
+        font-size: 16px;
+        line-height: 20px;
+        width: 0%;
+        padding-bottom: 7px;
+    }
+
+    .icon-box {
+        height: 326px;
+    }
+
+    .section-header::after{
+        width: 150px;
+    }
+
+    .more-contacts-list {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .section-header {
+        font-size: 20px;
+        line-height: 24px;
+    }
+  }
+
+  @media(max-width: 900px){
+    .about-me{
+        margin-top: 70px;
+    }
+  }
+
+  @media(max-width: 871px){
+    .header-info > h2 {
+        padding-top: 26px;
+        padding-right: 0;
+    }
+  }
+
+  @media(max-width: 710px){
+    .icon-box {
+        height: 280px;
+        max-width: 290px;
+    }
+
+    .icon-box > img {
+        max-width: 185px;
+    }
+
+    .header-info > h2 {
+        padding-bottom: 15px;
+    }
+
+    .name {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .sirname{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .section-header::after{
+        width: 100px;
+    }
+    .burger-menu-nav-list {
+        padding-top: 0px;
+    }
+  }
+
+  @media(max-width: 550px){
+    .header-info {
+        border-bottom: 28px solid #157698;
+    }
+
+    .header-info > h2 {
+        padding-top: 12px;
+    }
+
+    .icon-box {
+        height: 269px;
+        max-width: 248px;
+    }
+
+    .icon-box > img {
+        border: 28px solid #157698;
+        border-right: none;
+    }
+  }
+
+  @media(max-width: 515px){
+    .icon-box {
+        height: 305px;
+    }  
+  }
+
+  @media(max-width: 460px){
+    .icon-box > img {
+        border: 28px solid #157698;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-radius: 0;
+    }
+
+    .nav-list {
+        padding-left: 15%;
+    }
+
+    .name {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .sirname{
+        font-size: 30px;
+        line-height: 40px; 
+    }
+
+    .section-header {
+        font-size: 18px;
+    }
+
+    .about-me-list {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .study-list {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .code{
+        display: none; 
+        /* code crashed structure */
+    }
+  }
+
+  @media(max-width: 370px){
+    .icon-box > img {
+        max-width: 159px;
+    }
+    .nav-list {
+        padding-left: 5%;
+    }
+  }

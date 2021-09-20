@@ -8,7 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/351666.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/904eb7851f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
     <title>CV</title>
 </head>
 
@@ -37,20 +44,39 @@
     </header>
     <main>
         <h1>CV</h1>
-        <div class="container">
-            <div class="wrapper-columns">
-                <section class="more-contacts">
-                    <h2 class="section-header cnt">More contacts</h2>
-                    <nav class="more-contacts-nav">
-                        <ul class="more-contacts-list">
-                            <li><img src="src/tg.svg" alt="Telegram" class="more-icon">Telegram: +375 44 512-27-97</li>
-                            <li><img src="src/viber.svg" alt="Viber" class="more-icon">Viber: +375 44 512-27-97</li>
-                            <li><img src="src/whatsapp.svg" alt="WhatsApp" class="more-icon">WhatsApp: +37544 512-27-97
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
-                <section class="about-me">
+        <div class="burger-menu">
+            <a class="burger-menu-button">
+                <span class="burger-menu-lines">
+                </span>
+            </a>
+            <nav class="burger-menu-nav">
+                <ul class="burger-menu-nav-list">
+
+                    <li class="burger-menu-nav-list-item">
+                        <h2 class="section-header cnt">More contacts</h2>
+                        <nav class="more-contacts-nav">
+                            <ul class="more-contacts-list">
+                                <li><i class="fab fa-telegram-plane"></i> Telegram: +375 44
+                                    512-27-97</li>
+                                <li><i class="fab fa-viber"></i> Viber: +375 44
+                                    512-27-97</li>
+                                <li><i class="fab fa-whatsapp"></i> WhatsApp:
+                                    +37544 512-27-97
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="burger-menu-nav-list-item">
+                        <h2 class=" section-header">Navigation</h2>
+                    </li>
+                    <li class="burger-menu-nav-list-item "><a href="#about-me">About me</a></li>
+                    <li class="burger-menu-nav-list-item "><a href="#courses">Courses</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper-columns">
+            <section class="about-me" id="about-me">
+                <div class="container">
                     <h2 class="section-header">About me: </h2>
                     <ul class="about-me-list">
                         <li>My main goal now is const self-improve in web-programming.</li>
@@ -59,23 +85,25 @@
                         <li>I work with HTML, CSS, JS. Studied algorithms on C, C++, Python.</li>
                         <li>Code:</li>
                     </ul>
-                    <pre class="code">
-var OrderPeople = function(people){
+                    <pre class="code"><code class="js">var OrderPeople = function(people){
     return people.sort( (a,b) => a.age - b.age );
 }
-                    </pre>
-                </section>
-            </div>
-            <section class="courses">
-                <h2 class="section-header">Courses and study: </h2>
-                <ul class="study-list">
-                    <li>CS50 video course</li>
-                    <li>JS, CSS, HTML, Git video courses on YouTube channel Glo Academy</li>
-                    <li>JavaScript <a href="https://learn.javascript.ru/" class="link">https://learn.javascript.ru/</a>
-                    </li>
-                    <li>Third year FITU BSUIR.</li>
-                    <li>English A2.</li>
-                </ul>
+</code></pre>
+                </div>
+            </section>
+            <section class="courses" id="courses">
+                <div class="container">
+                    <h2 class="section-header">Courses and study: </h2>
+                    <ul class="study-list">
+                        <li>CS50 video course</li>
+                        <li>JS, CSS, HTML, Git video courses on YouTube channel Glo Academy</li>
+                        <li>JavaScript <a href="https://learn.javascript.ru/"
+                                class="link">https://learn.javascript.ru/</a>
+                        </li>
+                        <li>Fourth year FITU BSUIR.</li>
+                        <li>English A2.</li>
+                    </ul>
+                </div>
             </section>
         </div>
     </main>
@@ -90,6 +118,7 @@ var OrderPeople = function(people){
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
